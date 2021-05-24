@@ -1,4 +1,4 @@
-# PHP-API Call
+# Introduction
 
 Simple PHP Codes to make API calls with GET, POST options
 
