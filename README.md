@@ -4,7 +4,7 @@ Simple PHP Codes to make API calls with GET, POST options
 
 - [zcode] (https://zetcode.com/php/curl/)
 
-# Screenshots
+## Screenshots
 
 ![GET Call](screenshots/getCall.PNG)
 
