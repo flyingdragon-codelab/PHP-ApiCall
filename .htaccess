@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# data
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^data$ get-data.php [NC,L]
