@@ -15,7 +15,7 @@ echo "\n".'The value in name header is = '.$headers['name'];
 
 $ch = curl_init('https://prod-09.southeastasia.logic.azure.com:443/workflows/01dc89a82684408a8078a10fd3c49053/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=exRlWCFp7i4ReZObPRRpqOMw-YqAbZ8TibZ5sxwC7Ek');
  
-$bodyfields = json_encode(['name' => 'John Doe', 'occupation' => 'gardener']);
+$bodyfields = file_get_contents('php://input');
 $options = [
     CURLOPT_POST => true, 
     CURLOPT_POSTFIELDS => $bodyfields, 
